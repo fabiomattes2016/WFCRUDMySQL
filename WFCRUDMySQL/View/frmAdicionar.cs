@@ -5,13 +5,13 @@ using WFCRUDMySQL.Model.Enum;
 
 namespace WFCRUDMySQL.View
 {
-    public partial class frmAdicionar : Form
+    public partial class FrmAdicionar : MaterialSkin.Controls.MaterialForm
     {
         ContatoDAO contatoDAO = new();
         TipoOperacao tipoOperacao;
         string IdSelecionado;
 
-        public frmAdicionar()
+        public FrmAdicionar()
         {
             InitializeComponent();
             CarregarGrid(TipoBusca.Listagem);

@@ -163,8 +163,6 @@ namespace WFCRUDMySQL.Model.DAO
             {
                 List<Contato> contatos = new();
                 throw new Exception(ex.Message);
-
-                return contatos;
             }
             finally
             {
