@@ -9,7 +9,6 @@ namespace WFCRUDMySQL.View
 {
     public partial class FrmAdicionar : MaterialSkin.Controls.MaterialForm
     {
-        ContatoDAO contatoDAO = new();
         ContatoService contatoService = new();
 
         TipoOperacao tipoOperacao;
