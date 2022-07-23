@@ -14,6 +14,7 @@ namespace WFCRUDMySQL.View
         public FrmAdicionar()
         {
             InitializeComponent();
+            lstDados.Font = new Font("Roboto", 10, System.Drawing.FontStyle.Regular);
             CarregarGrid(TipoBusca.Listagem);
         }
 
