@@ -27,7 +27,7 @@ app.MapGet($"{BASE_ENDPOINT}/contato", async (ContatoDbContext context) =>
     List<Contato> contatos = await context.Contatos.ToListAsync();
     return Results.Ok(contatos);
 })
-.WithName("GetContato")
+.WithName("GetContatos")
 .WithTags("Contato")
 .Produces<List<Contato>>(StatusCodes.Status200OK)
 .Produces(StatusCodes.Status500InternalServerError);

@@ -9,13 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="EntityFramework" Version="6.4.4" />
-    <PackageReference Include="MaterialSkin.Updated" Version="0.2.2" />
-    <PackageReference Include="MySql.Data" Version="8.0.29" />
+    <Compile Remove="Controller\**" />
+    <EmbeddedResource Remove="Controller\**" />
+    <None Remove="Controller\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controller\" />
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="MaterialSkin.Updated" Version="0.2.2" />
+    <PackageReference Include="MySql.Data" Version="8.0.29" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Refit" Version="6.3.2" />
   </ItemGroup>
 
   <ItemGroup>
